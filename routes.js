@@ -14,8 +14,9 @@ router.get('/', (req, res) => {
   });
 
   router.get('/post', (req, res) => {
-    res.sendFile(__dirname + '/index.html');
-  });
+    res.render('index');
+});
+
   
   router.post('/upload', (req, res) => {
   
